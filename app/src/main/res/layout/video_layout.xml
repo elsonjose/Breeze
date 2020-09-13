@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen4dp"
+    android:elevation="@dimen/dimen12dp"
+    app:cardCornerRadius="@dimen/dimen12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/video_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/video_name_textview"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@drawable/curved_corners"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen8dp"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dimen4dp"
+            android:paddingEnd="@dimen/dimen4dp"
+            android:layout_marginStart="@dimen/dimen8dp"
+            android:layout_marginEnd="@dimen/dimen8dp"
+            android:backgroundTint="#bf000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Vide Name"/>
+
+
+        <TextView
+            android:id="@+id/video_size_textview"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@drawable/curved_corners"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen8dp"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dimen6dp"
+            android:paddingEnd="@dimen/dimen6dp"
+            android:layout_marginStart="@dimen/dimen8dp"
+            android:layout_marginEnd="@dimen/dimen8dp"
+            android:backgroundTint="#bf000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="size"
+            android:padding="@dimen/dimen2dp"/>
+
+        <TextView
+            android:id="@+id/video_length_textview"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@drawable/curved_corners"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen8dp"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dimen6dp"
+            android:paddingEnd="@dimen/dimen6dp"
+            android:layout_marginStart="@dimen/dimen8dp"
+            android:layout_marginEnd="@dimen/dimen8dp"
+            android:backgroundTint="#bf000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="duration"
+            android:padding="@dimen/dimen2dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
