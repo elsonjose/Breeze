@@ -44,6 +44,8 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoViewHolder> {
         holder.videoLengthTextView.setText(getDuration(videoList.get(position).getDuration()));
         holder.videoSizeTextView.setText(getSizeInMB(videoList.get(position).getSize()));
         holder.videoNameTextView.setText(videoList.get(position).getName());
+
+        
     }
 
 
